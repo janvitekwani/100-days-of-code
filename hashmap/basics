@@ -1,0 +1,6 @@
+.this is kind of data structure.
+.this store value in form of key and value pair
+.this has very good complexity of doing all the operation , searching , deleting and traversing 
+
+Q) find the data structure which do search , deletion and random in o(1) time complexity?
+A) mmm
