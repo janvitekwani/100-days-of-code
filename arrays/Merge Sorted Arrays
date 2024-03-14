@@ -1,0 +1,7 @@
+# Merge 2 sorted arrays without using the extra space
+
+arr1[]={1,3,5,7} arr2[]={ 0,2,6,8,9 }
+        0 1 2 3           4 5 6 7 8
+you can use the two pointer i and j 
+and merge them in another array arr3[] ={ 
+
