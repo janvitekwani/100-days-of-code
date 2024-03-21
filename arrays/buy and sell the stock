@@ -1,1 +1,49 @@
 
+class Solution {
+    public int maxProfit(int[] prices) {
+
+******** approach 1 ***********
+
+  in this we find min so far and maximum profit 
+
+       //find the min profit so far
+        int minsofar=prices[0];
+        int maxpro =0;
+       
+
+        for(int i=0;i<prices.length;i++)
+        {
+              minsofar= Math.min(minsofar,prices[i]);
+              int profit =prices[i]-minsofar;
+              maxpro= Math.max(maxpro,profit);
+
+        }
+        return maxpro;
+        
+
+
+
+
+ **********  approach 2 ******    
+
+        // in this we have create an auxillary array
+        // which we keep the max so far 
+        // so aux array for first example {7,5,5,6,6,4}
+        int aux [] = new int[prices.length];
+        int max=prices[prices.length-1];
+        for(int i=prices.length-1;i>=0;i--)
+        {    
+             max =Math.max(max,prices[i]);
+             aux[i]=max;
+         
+        }
+        // then we will subtract element of two array 
+          int maxpro=0;
+
+          for(int i=0;i<prices.length;i++)
+          {
+            maxpro=Math.max(aux[i]-prices[i],maxpro);
+          }
+          return maxpro;
+        }
+        }
