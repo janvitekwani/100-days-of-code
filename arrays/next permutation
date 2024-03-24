@@ -1,0 +1,12 @@
+1 approach
+    1) by using the recusion find all the permuatation
+    2) then search for the given recursion and then send the next recursion
+    3) if their is not next permutation then return the previous 
+
+it has time complexity n!*n beacuse making all the permutation will take n! time
+
+
+2 approach in
+ c++ there is a stl in build permuatation finding function  , not in java
+
+3 
