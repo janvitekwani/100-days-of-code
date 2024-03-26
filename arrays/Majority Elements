@@ -1,0 +1,17 @@
+approach 1 :  time complexity n2
+    set the counter and count the number of elements in every element
+    for( ....)
+      { for(....)
+           max (count)}
+           }    and then take that count
+
+approach 2: time complexity nlogn 
+        sort the array 
+        check for the first and next element 
+        and then find the max count and select the index
+
+approach 3:        
+        
+           
+
+           
