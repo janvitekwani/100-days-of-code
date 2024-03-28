@@ -1,0 +1,32 @@
+
+approach 1:
+    a={4,1,3,5,1,2,3,2,1,1,5}
+    k = 3;
+  time O(n*k)  , space O(1)
+    
+class Solution {
+    public int[] maxSlidingWindow(int[] nums, int k) {
+      ArrayList <Integer> ans = new ArrayList <Integer>();
+      int max;
+       
+       for(int i=0;i<nums.length-k+1;i++)
+         {   max= nums[i];
+            for(int j=i;j<i+k;j++)
+              {
+                  max=Math.max(nums[j],max);
+              }
+            ans.add(max);
+         } 
+       int[] intArray = ans.stream().mapToInt(Integer::intValue).toArray();
+
+       return intArray;
+    
+    }
+}
+
+
+approach 2: using priority queue / using AVL tree 
+  
+
+    
+   
